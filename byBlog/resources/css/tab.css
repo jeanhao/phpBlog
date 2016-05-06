@@ -1,0 +1,40 @@
+body {
+    font-family: Cambria, Arial;
+}
+
+.tabs {
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    cursor: pointer;
+    background: -webkit-linear-gradient(#666, #555);
+    color: #eee;
+    border-radius: 5px 5px 0 0;
+    padding: 1.5% 3%;
+    float: left;
+    margin-right: 2px;
+    font: italic 1em cambria;
+}
+
+label:hover {
+    background: -webkit-linear-gradient(#777, #666);
+}
+
+input:checked + label {
+    background: #fff;
+    color: #333;
+}
+
+.panels {
+    float: left;
+    position: relative;
+    background: #fff;
+    border-radius: 0 10px 10px 10px;
+}
+
+#label1{
+	background-color:white;
+	color: grey
+}

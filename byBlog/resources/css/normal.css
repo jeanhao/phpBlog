@@ -1,0 +1,114 @@
+/*#menu {
+	font-family: Arial;
+	font-size: 15px;
+	text-align: center;
+}
+
+#menu a,#menu a:visited {
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	display: block;
+	width: 10em;
+	padding: 0.25em;
+	margin: 0.1 0.5em auto;
+	background-color: #FF8800;
+	border: 2px solid #fff;
+	border-color: #def #678 #345 #cde;
+	position: relative;
+	float: left;
+	cursor: pointer;
+}
+
+.lastmenu {
+	margin-bottom: 1em;
+}
+
+#menu a:hover {
+	top: 2px;
+	left: 2px;
+	border-color: #345 #cde #def #678;
+}
+*/.msg_left {
+	-webkit-border-radius: 5;
+	-moz-border-radius: 5;
+	width: 100%;
+	background-color: #eeeeee;
+	border-width: 1px;
+	border-color: #cccccc;
+	border-style: solid;
+	padding: 0 0px;
+	margin: 0 0px;
+	resize: vertical;
+	overflow: hidden;
+}
+
+.north {
+	background: url(/sphi/resources/images/per2.jpg);
+	height: 40%;
+	color: #99FF99;
+	background-size: 450px;
+	font: 1em "Î¢ÈíÑÅºÚ", "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+
+.south {
+	height: 70%;
+	background: white;
+	color: gray;
+}
+
+.line {
+	color: black;
+	padding: 10px;
+}
+
+.scrollerTop {
+	position: absolute;
+	z-index: 999999;
+	right: 0em;
+	background: white url(/sphi/resources/images/scroll.png);
+	width: 10px;
+	height: 120px;
+	/* display: none; */
+	border-radius: 5px;
+}
+
+#scroller1,#scroller2,#scroller3 {
+	width: 10px;
+	height: 40px;
+	right: 0px;
+	position: absolute;
+	z-index: 99999999;
+	border-radius: 5px;
+	text-align:center;
+}
+#sc1,#sc2,#sc3{
+	color:white;
+	display:none;
+}
+#sc1,#sc2,#sc3{
+	position: relative;
+    top: 8px;
+}
+.headimg{ border-radius:100%; overflow:hidden;max-width: 60px;max-height: 60px }
+
+.logicon {
+	background-image: url(/sphi/resources/images/login.gif) !important;
+}
+.hand {
+	cursor: pointer;
+}
+.imgs{
+	max-width:100%;
+	max-height:5em;
+	overflow:hidden;
+	position:relative;
+	top:-29px
+}
+.img {
+	max-width: 120px;width: expression(document.body.clientWidth > 120 ? "120px" :"auto");
+	overflow: hidden;
+	max-height: 120px;height: expression(document.body.clientHeight >120 ?  "120px" : "auto") 
+}
+
+

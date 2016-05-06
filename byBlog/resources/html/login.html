@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <script type="text/javascript" src="resources/js/login.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/buttons.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="resources/css/tab.css">
+</head>
+{if $errorMsg != ""} {$errorMsg} {/if}
+
+<body background="resources/images/main.jpg" onload="init()">
+    <article class="tabs">
+        <div>
+            <label id="label1" onclick="showLogin()">用户登录</label>
+            <label id="label2" onclick="showRegister()">用户注册</label>
+            <div class="panels">
+                <div id="panel1">
+                    <form id="myform1" action="login.php" method="post">
+                        <table>
+                            <tr>
+                            </tr>
+                            <tr>
+                                <td>账号：</td>
+                                <td>
+                                    <input type="text" name="userName" placeholder="用户名">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>密码：</td>
+                                <td>
+                                    <input type="password" name="password" placeholder="密码">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" class="button purple" value="提交">
+                                    <input type="reset" class="button green" value="重置">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div id="panel2" style="display: none">
+                    <form id="myform2" action="login.php" method="post">
+                        <table>
+                            <tr>
+                            </tr>
+                            <tr>
+                                <td>账号：</td>
+                                <td>
+                                    <input type="text" name="userName" placeholder="用户名">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>密码：</td>
+                                <td>
+                                    <input type="password" name="password" placeholder="密码">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>邮箱：</td>
+                                <td>
+                                    <input type="text" name="email" placeholder="邮箱">
+                                </td>
+                            </tr>
+                            <input type="hidden" name="isRegister" value="true">
+                            <tr>
+                                <td></td>
+                                <td>
+                                <font class="button purple" onclick="register()">提交</font>
+                                    <input type="reset" class="button green" value="重置">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>

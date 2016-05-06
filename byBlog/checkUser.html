@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <link rel="stylesheet" type="text/css" href="resources/css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="resources/css/tab.css">
+    <script type="text/javascript" src="resources/js/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="resources/js/checkUser.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/buttons.css">
+</head>
+
+<body background="resources/images/main.jpg" onload="init()">
+    <article class="tabs">
+        <label id="label1" onclick="checkUser()">用户审核</label>
+        <label id="label2" onclick="viewUser()">用户查看</label>
+        <div class="panels" style="display:block">
+            <div id="panel1">
+                <table class="result-tab content1" width="100%">
+                </table>
+                <br>
+                <center>第<span class="pageNow1">1</span>页 共<span class="allPageNum1"></span>页
+                    <font color="blue"><a style="cursor: pointer" onclick="changePage(1,-1)">上一页</a><a style="cursor: pointer" onclick="changePage(1,1)"> 下一页</a></font>
+                </center>
+                <br>
+            </div>
+            <div id="panel2" style="display: none">
+                <table class="result-tab content2" width="100%">
+                </table>
+                <br>
+                <center>第<span class="pageNow2">1</span>页 共<span class="allPageNum2"></span>页
+                    <font color="blue"><a style="cursor: pointer" onclick="changePage(2,-1)">上一页</a><a style="cursor: pointer" onclick="changePage(2,1)"> 下一页</a></font>
+                </center>
+                <br>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>
